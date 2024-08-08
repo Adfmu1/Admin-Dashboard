@@ -29,10 +29,29 @@ body {
     flex-direction: column;
 }
 
-.upper, .lower {
+#search-field, .profile {
     display: flex;
+    align-items: center;
+}
+
+.upper, .lower{
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile2 {
     display: flex;
+}
+
+.post-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+button {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 3em;
 }

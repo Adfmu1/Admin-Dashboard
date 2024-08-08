@@ -3,11 +3,13 @@ body {
     grid-template: 1fr 7fr / 1fr 5fr ;
 }
 
+/* dashbboard */
 #dashboard {
     grid-area: 1 / 1 / -1 / 2;
     background-color: #2563eb;
 }
 
+/* icons */
 .dashboard-logo, .profile-picture {
     width: 70px;
 }
@@ -18,4 +20,19 @@ body {
 
 .notification-bell {
     width: 50px;
+}
+
+/* header */
+#header {
+    grid-area: 1 / 2 / 2 / -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper, .lower {
+    display: flex;
+}
+
+.profile2 {
+    display: flex;
 }

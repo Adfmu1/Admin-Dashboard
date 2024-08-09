@@ -15,7 +15,7 @@ body {
 }
 
 .search-button {
-    width: 40px;
+    width: 35px;
 }
 
 .notification-bell {
@@ -27,16 +27,37 @@ body {
     grid-area: 1 / 2 / 2 / -1;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 5px 5px rgb(204, 117, 117);
 }
 
-#search-field, .profile {
+#search, .profile {
     display: flex;
     align-items: center;
+}
+
+#search {
+    margin-left: 5vw;
+}
+
+#search-field {
+    border: none;
+    height: 2rem;
+    width: 25vw;
+    border-radius: 4rem;
+    background-color: #dafcf5;
+}
+
+#search-field:focus {
+    outline: none;
 }
 
 .upper, .lower{
     display: flex;
     justify-content: space-between;
+}
+
+.upper {
+    align-items: center;
 }
 
 .profile2 {
@@ -51,7 +72,14 @@ body {
 }
 
 button {
+    border: none;
+    background-color: #1d4ed8;
+    color: white;
     height: 3rem;
     width: 7rem;
-    border-radius: 3em;
+    border-radius: 3rem;
+}
+
+#main-content {
+    background-color: #dafcf5;
 }

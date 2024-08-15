@@ -1,3 +1,8 @@
+@font-face {
+    font-family: migae;
+    src: url(./fonts/migae.otf);
+}
+
 body {
     margin: 0px 0px 0px 0px;
     display: grid;
@@ -8,12 +13,35 @@ body {
 
 /* dashbboard */
 #dashboard {
+    display: flex;
+    font-family: "migae";
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6vh;
     grid-area: 1 / 1 / -1 / 2;
     background-color: #2563eb;
 }
 
 .upper-options > div > a > img, .lower-options > div > a > img {
-    width: 3rem;
+    width: 2.5vw;
+}
+
+.main-page {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.upper-options > div > a, .lower-options > div > a {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.upper-options, .lower-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 /* logo */
@@ -22,7 +50,11 @@ body {
     margin-left: 1.5vw;
 }
 
-.main-page {
+#dashboard > div > div {
+    margin-left: 2vw;
+}
+
+.main-page, #dashboard > div > div > a {
     display: flex;
     align-items: center;
 }

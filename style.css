@@ -162,14 +162,53 @@
 }
 
 #your-projects {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 35px;
     grid-area: 1 / 1 / -1 / 2;
-background-color: red;
+    padding: 30px;
 }
 
 #announcements {
-background-color: blue;
+    background-color: blue;
 }
 
 #trending {
-background-color: green;
+    background-color: green;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: white;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgb(209, 220, 57) 2%, rgba(255,255,255,1) 2%);
+}
+
+.project-text {
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.project-text > h2 {
+    margin-bottom: 0px;
+}
+
+.project-text > p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.project-icons > img {
+    width: 30px;
 }

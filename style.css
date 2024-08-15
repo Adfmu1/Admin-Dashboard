@@ -12,6 +12,10 @@ body {
     background-color: #2563eb;
 }
 
+.upper-options > div > a > img, .lower-options > div > a > img {
+    width: 3rem;
+}
+
 /* logo */
 .logo {
     margin-top: 1.5vh;

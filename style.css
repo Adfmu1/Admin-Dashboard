@@ -223,8 +223,11 @@
 }
 
 #announcements > h2, #trending > h2 {
-  margin-top: 3vh;
   margin-bottom: 15px;
+}
+
+#trending > h2 {
+  margin-top: 2vh;
 }
 
 #announces, #trending1 {
@@ -245,4 +248,22 @@
 
 .trend > a > img {
   width: 70px;
+}
+
+.user-trending {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
+
+#trending1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

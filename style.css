@@ -158,23 +158,14 @@
 /* main content */
 #main-content {
     display: grid;
-    grid-template: 1fr 1fr / 4fr 1fr;
+    grid-template: 1fr 1fr / 7fr 2fr;
 }
 
 #your-projects {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 35px;
-    grid-area: 1 / 1 / -1 / 2;
-    padding: 30px;
-}
-
-#announcements {
-    background-color: blue;
-}
-
-#trending {
-    background-color: green;
+    padding: 15px 30px 30px 30px;
 }
 
 .project {
@@ -211,4 +202,47 @@
 
 .project-icons > img {
     width: 30px;
+}
+
+#projects {
+  grid-area: 1 / 1 / -1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects > h2 {
+  padding-left: 30px;
+  margin-top: 3vh;
+  margin-bottom: 0px;
+}
+
+#announcements, #trending {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+#announcements > h2, #trending > h2 {
+  margin-top: 3vh;
+  margin-bottom: 15px;
+}
+
+#announces, #trending1 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.announcement > h3 {
+  margin: 0px;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trend > a > img {
+  width: 70px;
 }
